@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap");
+
+// Set your brand colors
+$primary: #8a4d76;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+
+// Update Bulma's global variables
+$family-title: "Bangers", cursive;
+$family-sans-serif: "Montserrat", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: #000;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+
+// Code en plus
+.background {
+  background-color: #000;
+  background: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hoverlay-black {
+  background: rgba(0, 0, 0, 0.6);
+}
+h1,
+h2 {
+  font-family: $family-title;
+  letter-spacing: 5px;
+  line-height: 1.1 !important;
+}
+
+.centered-brand {
+  position: absolute;
+  left: 45%;
+  margin-left: -100px !important;
+  margin-top: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  @include touch {
+    margin-top: 15px;
+  }
+}
+
+.navbar {
+  height: 5.25rem;
+  // box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.navbar-item {
+  img {
+    max-height: 4.75rem;
+  }
+  .logo {
+    max-height: 4.4rem;
+  }
+  .icon {
+    margin: 0px 3px !important;
+  }
+}
