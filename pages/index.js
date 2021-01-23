@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Head from 'next/head'
-import Image from "next/Image";
+import Image from "next/image";
  import { InlineWidget } from "react-calendly";
 import { motion } from "framer-motion"
 
